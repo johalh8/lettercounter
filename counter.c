@@ -19,7 +19,7 @@ int main()
 
   // request and read in the string from the user
   printf("Enter text for analysis: ");
-  while ( (input = getchar()) != '\n' ) {
+  while ( ((input = getchar()) != '\n') && (i < (1023))) {
     buffer[i++] = input;
   }
   buffer[i] = '\0';
